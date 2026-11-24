@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE GOOD BOSS | Apex Leadership, Wellness & Organizational Transformation</title>
+  <meta name="description"
+    content="The premier executive funnel for high-stakes leadership coaching, corporate turnarounds, 3-day crucibles, the 20-elective bio-performance track, and mobile app ecosystem.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/funnel.css?v=20261124-dashboard-theme-4">
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       TOP NOTIFICATION TICKER
+       ======================================================================== -->
+  <aside class="top-announcement-bar" style="background: linear-gradient(90deg, #08284f 0%, #0b2f61 50%, #08284f 100%); border-bottom: 1px solid rgba(255, 255, 255, 0.16); padding: 8px 16px; font-size: 0.8rem; text-align: center; color: #ffffff; position: relative; z-index: 1001;">
+    <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap;">
+      <span class="badge" style="background: var(--gold-gradient); color: #ffffff; font-weight: 800; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem;">RETURNING CLIENTS</span>
+      <span>Bypass Phase 1 &amp; start at Phase 2 for <strong>$2,000</strong> (8-Week Track). Use code <code style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; color: #fff;">BOSS500</code> for $500 off!</span>
+      <a href="#pricing" style="color: var(--gold-400); text-decoration: underline; font-weight: 700; margin-left: 8px;">Claim Offer &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       NAVIGATION BAR
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="The Good Boss home">
+        <img src="assets/images/brand-logo.png" alt="The Good Boss" class="brand-logo">
+      </a>
+
+      <nav id="primaryNavigation">
+        <ul class="nav-links">
+          <li><a href="#pyramid" class="nav-link">The Pyramid</a></li>
+          <li><a href="#courses" class="nav-link">12-Week Course</a></li>
+          <li><a href="#electives" class="nav-link">20 Electives</a></li>
+          <li><a href="#corporate" class="nav-link">Corporate ($35K)</a></li>
+          <li><a href="#workshop" class="nav-link">3-Day Workshop</a></li>
+          <li><a href="#ecosystem" class="nav-link">App &amp; Merch</a></li>
+          <li><a href="login.html" class="nav-link" style="color: #ed2433; font-weight: 700;"><i class="fa-solid fa-graduation-cap"></i> Client Portal</a></li>
+          <li class="mobile-returning-link"><a href="#pricing" class="nav-link" onclick="setPlanAndScroll('returning')">Returning Client ($2,000)</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html" class="nav-returning-badge" style="border-color: rgba(237, 36, 51, 0.4); color: #ed2433; background: rgba(237, 36, 51, 0.1);">
+          <i class="fa-solid fa-id-card"></i> Student Portal
+        </a>
+        <button class="nav-returning-badge" onclick="setPlanAndScroll('returning')">
+          <i class="fa-solid fa-rotate-right"></i> Returning Client ($2,000)
+        </button>
+        <a href="#pricing" class="btn btn-primary btn-sm">
+          <span>Enroll Now</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-controls="primaryNavigation" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         HERO SECTION - MARKETING FUNNEL LAUNCHPAD
+         Funnel to: Coaching Courses, Merchandise Mobile App, 3-Day Workshop, Corporate
+         ====================================================================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-group">
+            <span class="hero-badge highlight"><i class="fa-solid fa-award"></i> The Apex Leadership Ecosystem</span>
+            <span class="hero-badge"><i class="fa-solid fa-layer-group"></i> 3-Tier Structural Pyramid</span>
+            <span class="hero-badge"><i class="fa-solid fa-calendar-check"></i> 1 Course Per Week</span>
+          </div>
+
+          <h1 class="hero-title">
+            Lead From The Apex.<br>
+            <span class="gradient-text-gold font-serif">Command The Empire.</span>
+          </h1>
+
+          <p class="hero-description">
+            The comprehensive executive transformation ecosystem. Master unshakeable personal self-governance, optimize
+            your biology with <strong>20 specialized wellness electives</strong>, and orchestrate <strong>high-velocity
+              turnarounds, change maxing, and exponential corporate growth</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#pricing" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-compass"></i>
+              <span>Explore 12-Week Program</span>
+            </a>
+
+            <button class="btn-video-trigger" onclick="openVideoModal()">
+              <span class="pulse-play-icon"><i class="fa-solid fa-play"></i></span>
+              <span>Watch Course Intro (2 Min)</span>
+            </button>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <h4>12 Weeks</h4>
+              <p>Phased Curriculum (1 Course/Wk)</p>
+            </div>
+            <div class="stat-item">
+              <h4 style="color: var(--emerald-400);">20 Electives</h4>
+              <p>Phase 2 Bio-Performance Track</p>
+            </div>
+            <div class="stat-item">
+              <h4 style="color: var(--gold-300);">\$35,000</h4>
+              <p>Turnaround &amp; Corporate Interventions</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Marketing Funnel Directory Card -->
+        <div class="hero-funnel-card">
+          <div class="funnel-card-header">
+            <div>
+              <h3>Choose Your Gateway</h3>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">Direct pathways into The Good Boss ecosystem</p>
+            </div>
+            <div class="badge-live-portal">
+              <span class="live-indicator-dot"></span>
+              PORTALS OPEN
+            </div>
+          </div>
+
+          <div class="funnel-options-list">
+            <!-- Funnel 1: 12-Week Course -->
+            <a href="#courses" class="funnel-option-btn featured">
+              <div class="funnel-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="funnel-text">
+                <div class="funnel-text-top">
+                  <h4>12-Week Apex Course</h4>
+                  <span class="funnel-price-tag">\$3,000</span>
+                </div>
+                <p>3 Phases &bull; 1 Course/Week &bull; Phase 2 Electives</p>
+              </div>
+              <i class="fa-solid fa-chevron-right funnel-arrow"></i>
+            </a>
+
+            <!-- Funnel 2: Returning Client -->
+            <a href="#pricing" onclick="setPlanAndScroll('returning')" class="funnel-option-btn">
+              <div class="funnel-icon" style="color: var(--emerald-400);">
+                <i class="fa-solid fa-rotate-left"></i>
+              </div>
+              <div class="funnel-text">
+                <div class="funnel-text-top">
+                  <h4>Returning Client (8-Week)</h4>
+                  <span class="funnel-price-tag emerald">\$2,000</span>
+                </div>
+                <p>Skip Phase 1 &bull; Direct Phase 2 Elective + Phase 3</p>
+              </div>
+              <i class="fa-solid fa-chevron-right funnel-arrow"></i>
+            </a>
+
+            <!-- Funnel 3: Corporate Interventions -->
+            <a href="#corporate" class="funnel-option-btn">
+              <div class="funnel-icon" style="color: #0b2f61;">
+                <i class="fa-solid fa-building-shield"></i>
+              </div>
+              <div class="funnel-text">
+                <div class="funnel-text-top">
+                  <h4>Corporate Interventions</h4>
+                  <span class="funnel-price-tag">\$35,000</span>
+                </div>
+                <p>Leadership Dev, Turnarounds, Change Maxing &amp; Growth</p>
+              </div>
+              <i class="fa-solid fa-chevron-right funnel-arrow"></i>
+            </a>
+
+            <!-- Funnel 4: 3-Day Workshop -->
+            <a href="#workshop" class="funnel-option-btn">
+              <div class="funnel-icon" style="color: #ed2433;">
+                <i class="fa-solid fa-fire"></i>
+              </div>
+              <div class="funnel-text">
+                <div class="funnel-text-top">
+                  <h4>3-Day Intensive Workshop</h4>
+                  <span class="funnel-price-tag">\$1,250</span>
+                </div>
+                <p>Immersive Crucible &bull; Group Discounts Up to 25% Off</p>
+              </div>
+              <i class="fa-solid fa-chevron-right funnel-arrow"></i>
+            </a>
+
+            <!-- Funnel 5: Merchandise & Mobile App -->
+            <a href="#ecosystem" class="funnel-option-btn">
+              <div class="funnel-icon" style="color: #0b2f61;">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <div class="funnel-text">
+                <div class="funnel-text-top">
+                  <h4>Mobile App &amp; Merchandise</h4>
+                  <span class="funnel-price-tag" style="color: var(--text-muted); font-size: 0.8rem;">iOS /
+                    Android</span>
+                </div>
+                <p>Daily Habit Telemetry, Audio Courses &amp; Executive Merch</p>
+              </div>
+              <i class="fa-solid fa-chevron-right funnel-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         COURSE INTRODUCTION VIDEO SECTION
+         Client Requirement: "For the course: I need an introduction video."
+         ====================================================================== -->
+    <section class="video-section" id="intro-video">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-video"></i> Masterclass Preview</span>
+          <h2 class="section-title">The Blueprint: <span class="gradient-text-gold font-serif">Course
+              Introduction</span></h2>
+          <p class="section-subtitle">
+            Watch the official executive briefing breaking down the 1-course-a-week cadence, why Phase 1 builds
+            unshakeable personal governance, and how to select your Phase 2 elective.
+          </p>
+        </div>
+
+        <div class="video-player-container">
+          <div class="video-thumbnail-box" onclick="openVideoModal()">
+            <div class="video-backdrop-mesh"></div>
+            <div class="video-play-center">
+              <div class="giant-play-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <h3 class="video-intro-title font-serif">THE GOOD BOSS METHODOLOGY: UNVEILED</h3>
+              <div class="video-meta-tag">
+                <i class="fa-solid fa-clock"></i> 02:45 Runtime &bull; 4K Ultra HD &bull; Executive Briefing
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-key-takeaways">
+          <div class="takeaway-card">
+            <h4><i class="fa-solid fa-calendar-week"></i> 1 Course Every Week</h4>
+            <p>A rigorous 12-week progression designed to integrate deep behavioural rewiring without overwhelming heavy
+              executive schedules.</p>
+          </div>
+          <div class="takeaway-card">
+            <h4><i class="fa-solid fa-sliders"></i> 20 Phase 2 Electives</h4>
+            <p>Customize your journey. Choose 1 specialized track across metabolic fuel, sleep, nervous system
+              regulation, or stress mastery.</p>
+          </div>
+          <div class="takeaway-card">
+            <h4><i class="fa-solid fa-shield-halved"></i> Turnarounds &amp; Growth</h4>
+            <p>Learn the exact triage playbooks used in our \$35,000 enterprise turnarounds to build radical
+              organizational resilience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         THE STRUCTURAL PYRAMID SECTION
+         Client Requirement: "I need a pyramid showing structure. 
+         Base- life and Self development coaching. 
+         Second tier- wellness and nutrition. 
+         Top-Leadership and Organizational development"
+         ====================================================================== -->
+    <section class="pyramid-section" id="pyramid">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-cubes-stacked"></i> The Core Framework</span>
+          <h2 class="section-title">The 3-Tier <span class="gradient-text-gold font-serif">Structural Pyramid</span>
+          </h2>
+          <p class="section-subtitle">
+            Sustainable leadership is hierarchical. You cannot orchestrate enterprise growth without biological stamina,
+            and you cannot master biology without conquering your inner self.
+          </p>
+        </div>
+
+        <div class="pyramid-showcase-grid">
+          <!-- Visual Interactive 3-Tier Pyramid -->
+          <div class="pyramid-visual-wrapper">
+            <div class="pyramid-container" id="pyramidContainer">
+              <!-- Tier 3: Top Tier -->
+              <div class="pyramid-tier tier-top" id="tierTop" onclick="selectTier('top')"
+                onmouseenter="previewTier('top')">
+                <span class="tier-tag"><i class="fa-solid fa-crown"></i> Top Tier &bull; Weeks 9-12</span>
+                <h3 class="tier-title">Leadership &amp; Organizational Development</h3>
+                <span class="tier-phase-note">Phase 3: Fixed Capstone &bull; Turnarounds &amp; Growth</span>
+              </div>
+
+              <!-- Tier 2: Second Tier (Middle) -->
+              <div class="pyramid-tier tier-middle active" id="tierMiddle" onclick="selectTier('middle')"
+                onmouseenter="previewTier('middle')">
+                <span class="tier-tag"><i class="fa-solid fa-heart-pulse"></i> Second Tier &bull; Weeks 5-8</span>
+                <h3 class="tier-title">Wellness &amp; Nutrition</h3>
+                <span class="tier-phase-note">Phase 2: Flexible &bull; Choose 1 of 20 Elective Tracks</span>
+              </div>
+
+              <!-- Tier 1: Base Tier -->
+              <div class="pyramid-tier tier-base" id="tierBase" onclick="selectTier('base')"
+                onmouseenter="previewTier('base')">
+                <span class="tier-tag"><i class="fa-solid fa-anchor"></i> Base Tier &bull; Weeks 1-4</span>
+                <h3 class="tier-title">Life &amp; Self-Development Coaching</h3>
+                <span class="tier-phase-note">Phase 1: Fixed Bedrock &bull; Mindset &amp; Identity</span>
+              </div>
+            </div>
+
+            <div class="pyramid-prompt">
+              <i class="fa-solid fa-hand-pointer"></i> Click any pyramid tier to inspect its strategic curriculum
+            </div>
+          </div>
+
+          <!-- Dynamic Inspector Panel for the Pyramid -->
+          <div class="pyramid-inspector-card" id="pyramidInspector">
+            <div class="inspector-header">
+              <div>
+                <span class="inspector-tier-badge middle" id="inspectorTierBadge">Second Tier &bull; Phase 2</span>
+                <h3 class="inspector-title" id="inspectorTitle">Wellness &amp; Nutrition</h3>
+              </div>
+              <div class="inspector-icon" style="font-size: 2rem; color: var(--emerald-400);" id="inspectorIcon">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+            </div>
+
+            <p class="inspector-philosophy" id="inspectorDesc">
+              Leadership stamina is biological. Without sustained cognitive vitality, clean cellular energy, and
+              sleep-backed recovery, leadership fails. In this tier, clients choose 1 specialized track from 20 curated
+              master electives. Returning clients can bypass Phase 1 and start immediately here.
+            </p>
+
+            <div class="inspector-features-grid" id="inspectorFeatures">
+              <div class="inspector-feature-item">
+                <i class="fa-solid fa-check-double"></i>
+                <div>
+                  <h5>20 Specialized Master Electives</h5>
+                  <p>Choose 1 personalized track across metabolic fuel, circadian architecture, or stress resilience.
+                  </p>
+                </div>
+              </div>
+              <div class="inspector-feature-item">
+                <i class="fa-solid fa-check-double"></i>
+                <div>
+                  <h5>Direct Fast-Track for Returning Clients</h5>
+                  <p>Return clients can start directly here for an 8-week intensive at \$2,000.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inspector-actions">
+              <a href="#courses" class="btn btn-primary btn-sm" id="inspectorCta">
+                <span>View Phase 2 Electives</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <button class="btn btn-secondary btn-sm" onclick="setPlanAndScroll('returning')">
+                <span>Returning Client Track (\$2,000)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         THE 12-WEEK COACHING COURSE & PHASE MATRIX
+         Client Requirement: 
+         "1 course a week. 4 courses for phase 1. 4 courses for phase 2. 4 courses phase 3.
+         The phase 2 courses will draw on 20 potential courses, that can be chosen from. 
+         They only get to chose 1. For return clients, they can start with phase 2.
+         Phase 1 and 3 are fixed.
+         Pricing is $3,000 for 12 week course. $2,000 for returning 8 week clients. 
+         There will be a coupon code."
+         ====================================================================== -->
+    <section class="courses-section" id="courses">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Phased Curriculum</span>
+          <h2 class="section-title">The 12-Week <span class="gradient-text-gold font-serif">Executive Curriculum</span>
+          </h2>
+          <p class="section-subtitle">
+            1 course per week. Phase 1 and Phase 3 are fixed bedrock. Phase 2 unlocks 20 elite electives (choose 1).
+            Returning clients can bypass Phase 1 and start with Phase 2.
+          </p>
+        </div>
+
+        <!-- Returning Client Banner -->
+        <div class="returning-client-hero-alert">
+          <div class="returning-alert-left">
+            <div class="returning-icon-badge">
+              <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <div class="returning-alert-text">
+              <h4>Are you a Returning Client?</h4>
+              <p>Already mastered the Phase 1 Foundation? You are eligible to start directly with <strong>Phase 2 (Weeks
+                  5-12)</strong> for only <strong>$2,000</strong> (8-Week Journey). Select your elective below!</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="setPlanAndScroll('returning')">
+            <span>Select 8-Week Returning (\$2,000)</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Phase Tabs Navigation -->
+        <div class="phase-nav-tabs">
+          <button class="phase-tab-btn" id="tabPhase1" onclick="switchPhase('phase1')">
+            <div class="phase-tab-header">
+              <span class="phase-tab-number">PHASE 01</span>
+              <span class="phase-tab-badge">FIXED &bull; 4 WEEKS</span>
+            </div>
+            <h4 class="phase-tab-title">Foundation Architecture</h4>
+            <p class="phase-tab-sub">Base Tier: Life &amp; Self-Development Coaching</p>
+          </button>
+
+          <button class="phase-tab-btn active" id="tabPhase2" onclick="switchPhase('phase2')">
+            <div class="phase-tab-header">
+              <span class="phase-tab-number">PHASE 02</span>
+              <span class="phase-tab-badge elective"><i class="fa-solid fa-sparkles"></i> 20 ELECTIVES (CHOOSE 1)</span>
+            </div>
+            <h4 class="phase-tab-title">Bio-Performance &amp; Wellness</h4>
+            <p class="phase-tab-sub">Second Tier: Wellness and Nutrition (Return Clients Start Here)</p>
+          </button>
+
+          <button class="phase-tab-btn" id="tabPhase3" onclick="switchPhase('phase3')">
+            <div class="phase-tab-header">
+              <span class="phase-tab-number">PHASE 03</span>
+              <span class="phase-tab-badge">FIXED &bull; 4 WEEKS</span>
+            </div>
+            <h4 class="phase-tab-title">Apex Organizational Mastery</h4>
+            <p class="phase-tab-sub">Top Tier: Leadership &amp; Turnaround Engineering</p>
+          </button>
+        </div>
+
+        <!-- PHASE 1 PANEL (FIXED) -->
+        <div class="phase-panel" id="panelPhase1">
+          <div class="phase-overview-card">
+            <div class="phase-overview-info">
+              <h3>Phase 1: Foundation Architecture (Weeks 1 to 4)</h3>
+              <p>Fixed curriculum rooted in the pyramid's base tier. Deconstruct cognitive blind spots, master
+                high-stakes emotional regulation, and forge the foundational creed of apex executive identity.</p>
+            </div>
+            <div class="phase-meta-tags">
+              <span class="phase-meta-pill"><i class="fa-solid fa-lock"></i> Fixed Curriculum</span>
+              <span class="phase-meta-pill"><i class="fa-solid fa-clock"></i> 1 Course Every Week</span>
+              <span class="phase-meta-pill"><i class="fa-solid fa-layer-group"></i> Pyramid Base Tier</span>
+            </div>
+          </div>
+
+          <div class="course-weeks-grid" id="phase1Grid">
+            <!-- Dynamically populated or rendered via JS -->
+          </div>
+        </div>
+
+        <!-- PHASE 2 PANEL (20 POTENTIAL ELECTIVES - CHOOSE 1) -->
+        <div class="phase-panel active" id="panelPhase2">
+          <div class="phase-overview-card"
+            style="border-color: rgba(11, 47, 97, 0.2); background: linear-gradient(135deg, rgba(11, 47, 97, 0.06) 0%, #ffffff 100%);">
+            <div class="phase-overview-info">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                <span class="badge"
+                  style="background: var(--emerald-500); color: #fff; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 4px;">FLEXIBLE
+                  ELECTIVE TRACK</span>
+                <span style="color: var(--emerald-400); font-size: 0.85rem; font-weight: 700;">Returning Clients Begin
+                  Here</span>
+              </div>
+              <h3>Phase 2: Bio-Performance, Nutrition &amp; Resilience</h3>
+              <p>Clients choose <strong>exactly 1 specialized track from 20 available courses</strong> below. Your
+                choice dictates your Weeks 5-8 intensive laboratory, aligning with your individual health diagnostics
+                and schedule demands.</p>
+            </div>
+            <div class="phase-meta-tags">
+              <span class="phase-meta-pill" style="border-color: var(--emerald-400); color: var(--emerald-400);"><i
+                  class="fa-solid fa-check"></i> Choose 1 of 20</span>
+              <span class="phase-meta-pill"><i class="fa-solid fa-clock"></i> 4 Consecutive Weeks</span>
+              <span class="phase-meta-pill"><i class="fa-solid fa-heart-pulse"></i> Second Tier Pyramid</span>
+            </div>
+          </div>
+
+          <!-- Active Selection Banner -->
+          <div class="active-selection-banner" id="activeElectiveBanner">
+            <div class="active-selection-text">
+              <i class="fa-solid fa-circle-check" style="color: var(--emerald-400); font-size: 1.25rem;"></i>
+              <div>
+                <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Your Selected
+                  Phase 2 Elective:</span>
+                <h4 id="selectedElectiveDisplayTitle" style="color: var(--text-main); font-size: 1.05rem;">ELT-01:
+                  Bio-Individual Nutrition for Executive Stamina</h4>
+              </div>
+            </div>
+            <a href="#pricing" class="btn btn-primary btn-sm">
+              <span>Lock Track in Checkout</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+          </div>
+
+          <!-- 20 Electives Catalog Filter & Grid -->
+          <div class="phase2-elective-container" id="electives">
+            <div class="elective-filter-bar">
+              <div class="elective-category-pills">
+                <button class="category-pill active" onclick="filterElectives('All')">All 20 Electives</button>
+                <button class="category-pill" onclick="filterElectives('Nutrition & Metabolic Health')">Nutrition &amp;
+                  Metabolism (5)</button>
+                <button class="category-pill" onclick="filterElectives('Sleep & Circadian Optimization')">Sleep &amp;
+                  Recovery (5)</button>
+                <button class="category-pill" onclick="filterElectives('Mental Health & Stress Mastery')">Mental Health
+                  &amp; Stress (5)</button>
+                <button class="category-pill" onclick="filterElectives('Peak Habit & Execution Systems')">Peak Habits
+                  &amp; Systems (5)</button>
+              </div>
+
+              <div class="elective-search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="electiveSearchInput" placeholder="Search 20 courses..."
+                  oninput="handleElectiveSearch(this.value)">
+              </div>
+            </div>
+
+            <!-- The Grid of 20 Electives -->
+            <div class="electives-grid" id="electivesGrid">
+              <!-- Dynamically populated via JS from COURSE_DATA.electives -->
+            </div>
+          </div>
+        </div>
+
+        <!-- PHASE 3 PANEL (FIXED) -->
+        <div class="phase-panel" id="panelPhase3">
+          <div class="phase-overview-card" style="border-color: var(--border-gold);">
+            <div class="phase-overview-info">
+              <h3>Phase 3: Organizational Mastery &amp; Apex Execution (Weeks 9 to 12)</h3>
+              <p>The pinnacle of The Good Boss framework. Fixed capstone curriculum scaling your personal power into
+                enterprise systems, cultural architecture, corporate turnarounds, and exponential compounding growth.
+              </p>
+            </div>
+            <div class="phase-meta-tags">
+              <span class="phase-meta-pill"><i class="fa-solid fa-lock"></i> Fixed Curriculum</span>
+              <span class="phase-meta-pill"><i class="fa-solid fa-crown"></i> Pyramid Top Tier</span>
+              <span class="phase-meta-pill"><i class="fa-solid fa-trophy"></i> Capstone Certification</span>
+            </div>
+          </div>
+
+          <div class="course-weeks-grid" id="phase3Grid">
+            <!-- Dynamically populated or rendered via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PRICING & INTERACTIVE CHECKOUT FUNNEL
+         Client Requirement:
+         "Pricing is $3,000 for 12 week course. $2,000 for returning 8 week clients. 
+         There will be a coupon code."
+         ====================================================================== -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-tags"></i> Transparent Investment</span>
+          <h2 class="section-title">Invest in <span class="gradient-text-gold font-serif">Executive Mastery</span></h2>
+          <p class="section-subtitle">
+            Choose the complete 12-week apex curriculum, or rejoin as a returning client for the accelerated 8-week
+            Phase 2 &amp; 3 track. Apply your coupon code below for instant savings.
+          </p>
+        </div>
+
+        <div class="pricing-cards-container">
+          <!-- Card 1: 12-Week Full Program ($3,000) -->
+          <div class="pricing-card featured" id="pricingCardFull">
+            <span class="pricing-pill-badge gold">MOST POPULAR &bull; COMPLETE BLUEPRINT</span>
+            <div class="pricing-card-header">
+              <h3 class="plan-name">Full 12-Week Apex Course</h3>
+              <p class="plan-subtitle">Complete 3-Tier Transformation (Phase 1 + Phase 2 + Phase 3)</p>
+
+              <div class="price-display-box">
+                <span class="original-price-strike" id="fullOriginalStrike">\$3,000</span>
+                <span class="current-price" id="fullPriceDisplay">\$3,000</span>
+                <span class="price-period">/ 12 Weeks (1 Course/Wk)</span>
+              </div>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-row">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Phase 1: Foundation (Weeks 1-4)</strong> &bull; Complete Mindset, Self-Governance &amp;
+                  Identity Architecture</span>
+              </li>
+              <li class="plan-feature-row highlight-elective">
+                <i class="fa-solid fa-star"></i>
+                <span><strong>Phase 2: Bio-Performance (Weeks 5-8)</strong> &bull; Choose 1 of 20 Elite Elective
+                  Specializations</span>
+              </li>
+              <li class="plan-feature-row">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Phase 3: Apex Execution (Weeks 9-12)</strong> &bull; Turnarounds, Culture &amp; Growth
+                  Capstone</span>
+              </li>
+              <li class="plan-feature-row">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Full Lifetime Access to The Good Boss Mobile App</span>
+              </li>
+              <li class="plan-feature-row">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Direct Weekly 1-on-1 Executive Accountability Reviews</span>
+              </li>
+              <li class="plan-feature-row">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Official Apex Leadership Capstone Certification</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-primary btn-lg" onclick="openEnrollmentModal('full')">
+              <span>Enroll in 12-Week Course</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Card 2: Returning Client 8-Week Program ($2,000) -->
+          <div class="pricing-card returning-plan" id="pricingCardReturning">
+            <span class="pricing-pill-badge emerald">RETURNING CLIENT ADVANTAGE</span>
+            <div class="pricing-card-header">
+              <h3 class="plan-name">Returning Client (8-Week)</h3>
+              <p class="plan-subtitle">Bypass Phase 1 &bull; Direct Entry into Phase 2 &amp; Phase 3</p>
+
+              <div class="price-display-box">
+                <span class="original-price-strike" id="retOriginalStrike">\$2,000</span>
+                <span class="current-price" id="retPriceDisplay">\$2,000</span>
+                <span class="price-period">/ 8 Weeks (Accelerated)</span>
+              </div>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-row">
+                <i class="fa-solid fa-forward-step" style="color: var(--emerald-400);"></i>
+                <span><strong>Phase 1 Bypassed</strong> (Pre-requisite verified from prior enrollment)</span>
+              </li>
+              <li class="plan-feature-row highlight-elective">
+                <i class="fa-solid fa-star" style="color: var(--emerald-400);"></i>
+                <span><strong>Phase 2: Direct Entry</strong> &bull; Immediate placement into your selected elective
+                  track</span>
+              </li>
+              <li class="plan-feature-row">
+                <i class="fa-solid fa-circle-check"></i>
+                <span><strong>Phase 3: Organizational Mastery</strong> &bull; Advanced C-Suite leadership &amp;
+                  turnarounds</span>
+              </li>
+              <li class="plan-feature-row">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>The Good Boss Mobile App VIP Synchronization</span>
+              </li>
+              <li class="plan-feature-row">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Returning Cohort Exclusive Mastermind Access</span>
+              </li>
+              <li class="plan-feature-row">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Eligible for all active coupon codes</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-secondary btn-lg" onclick="openEnrollmentModal('returning')"
+              style="border-color: var(--navy);">
+              <span>Enroll as Returning Client</span>
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Working Coupon Code Engine Widget -->
+        <div class="coupon-widget-wrapper">
+          <div class="coupon-widget-header">
+            <h4><i class="fa-solid fa-ticket"></i> Apply Executive Coupon Code</h4>
+            <span style="font-size: 0.8rem; color: var(--emerald-400); font-weight: 700;">Instant Price Deduction</span>
+          </div>
+
+          <div class="coupon-input-group">
+            <input type="text" id="couponInput" placeholder="Enter coupon code (e.g. BOSS500)" value="BOSS500">
+            <button class="btn btn-primary" onclick="applyCouponCode()">Apply Code</button>
+          </div>
+
+          <div class="coupon-available-tags">
+            <span>Try active codes:</span>
+            <span class="coupon-chip" onclick="pasteCoupon('BOSS500')">BOSS500 (\$500 OFF)</span>
+            <span class="coupon-chip" onclick="pasteCoupon('EARLYBIRD')">EARLYBIRD (\$350 OFF)</span>
+            <span class="coupon-chip" onclick="pasteCoupon('VIP20')">VIP20 (20% OFF)</span>
+            <span class="coupon-chip" onclick="pasteCoupon('LEADER10')">LEADER10 (10% OFF)</span>
+          </div>
+
+          <div class="coupon-status-msg" id="couponStatusMsg"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CORPORATE TRAINING & INTERVENTIONS ($35,000)
+         Client Requirement:
+         "Corporate interventions around Leadership development, Turnarounds, 
+         Change Maxing, Growth Acceleration. Corporate training and interventions are $35,000"
+         ====================================================================== -->
+    <section class="corporate-section" id="corporate">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag emerald"><i class="fa-solid fa-building"></i> Enterprise Solutions</span>
+          <h2 class="section-title">Corporate Training &amp; <span
+              class="gradient-text-gold font-serif">Interventions</span></h2>
+          <p class="section-subtitle">
+            Comprehensive boardroom-level deployments. When market conditions shift, operational momentum stalls, or
+            explosive scale requires surgical execution, The Good Boss intervention team takes command.
+          </p>
+        </div>
+
+        <!-- Corporate Hero Banner ($35,000) -->
+        <div class="corporate-hero-banner">
+          <div class="corporate-banner-content">
+            <span class="badge"
+              style="background: rgba(232, 169, 57, 0.15); border: 1px solid var(--border-gold); color: var(--gold-300); font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 4px; text-transform: uppercase;">Full
+              Enterprise Engagement</span>
+            <h3 class="font-serif">Radical Organizational Triage &amp; Acceleration</h3>
+            <p>
+              Designed for executive leadership teams, private equity portfolios, and scaling enterprises facing market
+              pivots, culture fragmentation, or stalled growth. We deploy custom frameworks directly into your
+              operations for 90 days of relentless execution.
+            </p>
+            <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+              <button class="btn btn-primary" onclick="openCorporateModal()">
+                <span>Request Boardroom Briefing</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <a href="#workshop" class="btn btn-secondary">
+                <span>See 3-Day Workshop Alternative</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="corporate-pricing-box">
+            <span class="corporate-fee-label">Enterprise Investment</span>
+            <div class="corporate-fee font-serif">\$35,000</div>
+            <span class="corporate-fee-sub">All-Inclusive Bespoke Corporate Engagement</span>
+            <div
+              style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; border-top: 1px solid var(--border-subtle); padding-top: 14px; width: 100%;">
+              Includes 360&deg; C-Suite Diagnostics, War-Room Playbooks, Executive Coaching for up to 25 leaders, &amp;
+              90-Day Metric Guarantees.
+            </div>
+          </div>
+        </div>
+
+        <!-- The 4 Mandatory Pillars Requested by Client -->
+        <div class="corporate-pillars-grid">
+          <!-- Pillar 1: Leadership Development -->
+          <div class="pillar-card">
+            <div class="pillar-card-header">
+              <div class="pillar-icon-box">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <div class="pillar-header-text">
+                <h4>Leadership Development</h4>
+                <span>C-Suite Cohesion &amp; Bench Grooming</span>
+              </div>
+            </div>
+            <p>
+              Transform individual department heads into a unified, high-trust leadership cabal. We install radical
+              accountability frameworks, high-stakes decision trees, and eliminate executive siloing.
+            </p>
+            <div class="pillar-deliverables-box">
+              <h5>Included Deliverables</h5>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> 360-Degree Executive Leadership Audits</li>
+                <li><i class="fa-solid fa-check"></i> Succession Pipeline &amp; Delegation Architecture</li>
+                <li><i class="fa-solid fa-check"></i> Bi-Weekly Confidential 1-on-1 C-Suite Advisory</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Turnarounds -->
+          <div class="pillar-card">
+            <div class="pillar-card-header">
+              <div class="pillar-icon-box" style="background: linear-gradient(135deg, #f87171 0%, #dc2626 100%);">
+                <i class="fa-solid fa-arrows-spin"></i>
+              </div>
+              <div class="pillar-header-text">
+                <h4>Corporate Turnarounds</h4>
+                <span>Rapid Operational &amp; Cultural Triage</span>
+              </div>
+            </div>
+            <p>
+              For stalled divisions, distressed business units, or toxic workplace cultures. We deploy directly into the
+              trenches to diagnose root causes, stop margin hemorrhaging, and rebuild organizational momentum.
+            </p>
+            <div class="pillar-deliverables-box">
+              <h5>Included Deliverables</h5>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> 14-Day Diagnostic &amp; Operational Cash Triage</li>
+                <li><i class="fa-solid fa-check"></i> Toxic Bottleneck Elimination &amp; Restructuring</li>
+                <li><i class="fa-solid fa-check"></i> 90-Day Turnaround Command War-Room SOPs</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Change Maxing -->
+          <div class="pillar-card">
+            <div class="pillar-card-header">
+              <div class="pillar-icon-box" style="background: linear-gradient(135deg, #0b2f61 0%, #08284f 100%);">
+                <i class="fa-solid fa-bolt-lightning"></i>
+              </div>
+              <div class="pillar-header-text">
+                <h4>Change Maxing</h4>
+                <span>High-Velocity Change Management</span>
+              </div>
+            </div>
+            <p>
+              Eradicate change fatigue and organizational inertia. When introducing AI tooling, post-merger integration,
+              or new go-to-market systems, we turn employee skepticism into enthusiastic speed.
+            </p>
+            <div class="pillar-deliverables-box">
+              <h5>Included Deliverables</h5>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Friction-Mapping &amp; Change Resistance Audits</li>
+                <li><i class="fa-solid fa-check"></i> High-Velocity 30-Day Transformation Sprints</li>
+                <li><i class="fa-solid fa-check"></i> Internal Culture Champions Incentive Matrix</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Pillar 4: Growth Acceleration -->
+          <div class="pillar-card">
+            <div class="pillar-card-header">
+              <div class="pillar-icon-box" style="background: linear-gradient(135deg, #0b2f61 0%, #08284f 100%);">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div class="pillar-header-text">
+                <h4>Growth Acceleration</h4>
+                <span>Scalable Go-to-Market &amp; Execution Engines</span>
+              </div>
+            </div>
+            <p>
+              Smash through growth plateaus. Align your product, sales, marketing, and operational teams into a
+              compounding revenue flywheel optimized for capital efficiency and market dominance.
+            </p>
+            <div class="pillar-deliverables-box">
+              <h5>Included Deliverables</h5>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Pricing Optimization &amp; GTM Funnel Redesign</li>
+                <li><i class="fa-solid fa-check"></i> Sales Leadership Scorecards &amp; Quota Revamp</li>
+                <li><i class="fa-solid fa-check"></i> Executive KPI Dashboard for Board Transparency</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3-DAY WORKSHOP SECTION ($1,250 + GROUP DISCOUNTS)
+         Client Requirement: "Workshops are $1,250 for 3 days. Group discounts available."
+         ====================================================================== -->
+    <section class="workshop-section" id="workshop">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-fire"></i> Live Immersion</span>
+          <h2 class="section-title">The 3-Day Intensive <span class="gradient-text-gold font-serif">Executive
+              Crucible</span></h2>
+          <p class="section-subtitle">
+            An ultra-dense, 3-day deep immersion in an intimate setting. \$1,250 per attendee with dynamic group
+            discounts up to 25% for corporate delegations.
+          </p>
+        </div>
+
+        <div class="workshop-overview-grid">
+          <!-- 3-Day Itinerary -->
+          <div class="workshop-timeline">
+            <!-- Day 1 -->
+            <div class="workshop-day-card">
+              <div class="workshop-day-header">
+                <span class="day-badge">DAY 01</span>
+                <span class="day-hours"><i class="fa-regular fa-clock"></i> 08:30 AM &ndash; 05:30 PM</span>
+              </div>
+              <h3 class="workshop-day-title">Deconstruction &amp; Self-Governance (Pyramid Base)</h3>
+              <p class="workshop-day-focus">A ruthless ego audit, identifying hidden bottlenecks in your leadership
+                psychology, and installing the biological foundations of stamina.</p>
+              <div class="workshop-sessions-list">
+                <div class="session-item"><i class="fa-solid fa-check"></i> The Radical Audit: Diagnosing Personal
+                  Bottlenecks in the Mirror</div>
+                <div class="session-item"><i class="fa-solid fa-check"></i> Bio-Foundations: Cortisol Diagnostics, Sleep
+                  Architecture &amp; Fuel</div>
+                <div class="session-item"><i class="fa-solid fa-check"></i> Probabilistic Decision-Making Under Extreme
+                  Pressure</div>
+              </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="workshop-day-card">
+              <div class="workshop-day-header">
+                <span class="day-badge">DAY 02</span>
+                <span class="day-hours"><i class="fa-regular fa-clock"></i> 09:00 AM &ndash; 06:00 PM</span>
+              </div>
+              <h3 class="workshop-day-title">Team Dynamics &amp; Strategic Influence (Second Tier)</h3>
+              <p class="workshop-day-focus">From reactive management to autonomous, high-trust execution. Master
+                difficult terminations, radical candor, and psychological safety.</p>
+              <div class="workshop-sessions-list">
+                <div class="session-item"><i class="fa-solid fa-check"></i> The Architecture of High Standards &amp;
+                  Psychological Safety</div>
+                <div class="session-item"><i class="fa-solid fa-check"></i> Difficult Conversations: Terminations,
+                  Demotions &amp; Board Conflicts</div>
+                <div class="session-item"><i class="fa-solid fa-check"></i> Live Boardroom Simulation with Hostile
+                  Scenario Injections</div>
+              </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="workshop-day-card">
+              <div class="workshop-day-header">
+                <span class="day-badge">DAY 03</span>
+                <span class="day-hours"><i class="fa-regular fa-clock"></i> 09:00 AM &ndash; 05:00 PM</span>
+              </div>
+              <h3 class="workshop-day-title">Turnarounds, Change Maxing &amp; Scaling (Apex Tier)</h3>
+              <p class="workshop-day-focus">Synthesizing personal mastery into organizational power. Build your 12-month
+                Good Boss execution roadmap and crisis response playbooks.</p>
+              <div class="workshop-sessions-list">
+                <div class="session-item"><i class="fa-solid fa-check"></i> The 90-Day Turnaround Framework: Rescuing
+                  Stalled Teams</div>
+                <div class="session-item"><i class="fa-solid fa-check"></i> Change Maxing: Accelerating Adoption Without
+                  Fatigue</div>
+                <div class="session-item"><i class="fa-solid fa-check"></i> The Capstone Crucible, Executive Pledge
+                  &amp; Graduation</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Group Discount Calculator Widget -->
+          <div class="workshop-calculator-card">
+            <div class="calc-header">
+              <h3>Workshop Seat &amp; Discount Calculator</h3>
+              <p>Standard seat is <strong>$1,250</strong> for 3 full days. Bring your leadership team to unlock
+                automatic group discounts.</p>
+            </div>
+
+            <div class="calc-stepper-box">
+              <div class="calc-label">
+                <span>Select Number of Attendees:</span>
+                <strong id="seatCountLabel" style="color: var(--gold-300);">1 Attendee</strong>
+              </div>
+              <div class="calc-controls">
+                <button class="stepper-btn" onclick="adjustSeats(-1)"><i class="fa-solid fa-minus"></i></button>
+                <input type="number" class="seats-input-field" id="seatInput" value="1" min="1" max="25"
+                  onchange="updateWorkshopPrice(this.value)">
+                <button class="stepper-btn" onclick="adjustSeats(1)"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+
+            <div class="discount-tier-indicators">
+              <div class="discount-tier-badge active" id="tier1Badge">1 Seat<br><strong>0% Off</strong></div>
+              <div class="discount-tier-badge" id="tier2Badge">2 Seats<br><strong>10% Off</strong></div>
+              <div class="discount-tier-badge" id="tier3Badge">3-4 Seats<br><strong>15% Off</strong></div>
+              <div class="discount-tier-badge" id="tier4Badge">5+ Seats<br><strong>25% Off</strong></div>
+            </div>
+
+            <div class="calc-summary-box">
+              <div class="calc-summary-row">
+                <span>Standard Rate (\$1,250 &times; <span id="summarySeatQty">1</span>):</span>
+                <span id="summaryGrossPrice">\$1,250</span>
+              </div>
+              <div class="calc-summary-row" style="color: var(--emerald-400);">
+                <span>Group Discount Applied (<span id="summaryDiscountPercent">0%</span>):</span>
+                <span id="summaryDiscountSavings">-\$0</span>
+              </div>
+              <div class="calc-summary-row">
+                <span>Effective Rate Per Leader:</span>
+                <span id="summaryPerSeat">\$1,250 / seat</span>
+              </div>
+              <div class="calc-summary-row total-row">
+                <span>Total Investment:</span>
+                <span id="summaryNetTotal">\$1,250</span>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-lg" style="width: 100%;" onclick="openWorkshopBookingModal()">
+              <span>Reserve Workshop Seats</span>
+              <i class="fa-solid fa-ticket"></i>
+            </button>
+            <p style="font-size: 0.75rem; text-align: center; color: var(--text-dim); margin-top: 10px;">
+              <i class="fa-solid fa-shield-halved"></i> 100% Satisfaction or Seat Replacement Guarantee
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         MERCHANDISE & MOBILE APP SECTION
+         Client Requirement: "the merchandise mobile app"
+         ====================================================================== -->
+    <section class="ecosystem-section" id="ecosystem">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-mobile-screen-button"></i> Mobile &amp; Apparel
+            Ecosystem</span>
+          <h2 class="section-title">The Good Boss <span class="gradient-text-gold font-serif">App &amp;
+              Merchandise</span></h2>
+          <p class="section-subtitle">
+            Extend the philosophy into your daily routine. Carry biometric telemetry in your pocket and wear the
+            standards of apex leadership.
+          </p>
+        </div>
+
+        <!-- The Mobile App Showcase -->
+        <div class="app-showcase-box">
+          <div class="app-content">
+            <span class="badge"
+              style="background: rgba(11, 47, 97, 0.08); border: 1px solid rgba(11, 47, 97, 0.2); color: var(--emerald-400); font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 4px;">NOW
+              LIVE ON APP STORE &amp; GOOGLE PLAY</span>
+            <h3 class="font-serif">The Good Boss Daily Habit &amp; Course Portal</h3>
+            <p>
+              Your personal executive dashboard. Track your Phase 2 wellness metrics, stream your weekly audio lessons
+              on flights, access the emergency SOS crisis toolkit, and stay accountable to your cohort.
+            </p>
+
+            <div class="app-features-list">
+              <div class="app-feature-row">
+                <div class="app-feature-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                <div>
+                  <h5>Daily Habit &amp; Nutrition Telemetry</h5>
+                  <p>Syncs with Apple Health &amp; Oura Ring to monitor cortisol, HRV, and sleep recovery scores.</p>
+                </div>
+              </div>
+              <div class="app-feature-row">
+                <div class="app-feature-icon"><i class="fa-solid fa-headphones"></i></div>
+                <div>
+                  <h5>Offline Audio Course Player</h5>
+                  <p>Listen to all 12 weekly courses with offline playback for transatlantic flights and commutes.</p>
+                </div>
+              </div>
+              <div class="app-feature-row">
+                <div class="app-feature-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div>
+                  <h5>Executive Crisis SOS Mode</h5>
+                  <p>Pre-boardroom 90-second breathwork protocols and rapid crisis triage checklists at the tap of a
+                    button.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="app-store-badges">
+              <button class="app-store-btn" onclick="openAppDownloadModal('iOS')">
+                <i class="fa-brands fa-apple"></i>
+                <div class="app-btn-text">
+                  <span>Download on the</span>
+                  <strong>App Store</strong>
+                </div>
+              </button>
+
+              <button class="app-store-btn" onclick="openAppDownloadModal('Android')">
+                <i class="fa-brands fa-google-play"></i>
+                <div class="app-btn-text">
+                  <span>Get it on</span>
+                  <strong>Google Play</strong>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Smartphone Interactive Mockup -->
+          <div class="phone-mockup-wrapper">
+            <div class="phone-device">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="screen-app-bar">
+                  <span style="font-size: 0.7rem; color: var(--text-muted);"><i class="fa-solid fa-crown"></i> THE GOOD
+                    BOSS</span>
+                  <span style="font-size: 0.7rem; color: var(--gold-400);">WEEK 06 &bull; PHASE 2</span>
+                </div>
+
+                <div class="screen-score-card">
+                  <span>Today's Executive Readiness</span>
+                  <h4>94 / 100</h4>
+                  <p style="font-size: 0.65rem; color: var(--emerald-400); margin: 0;">Optimal Parasympathetic State</p>
+                </div>
+
+                <div class="screen-widget">
+                  <h6>Current Specialization</h6>
+                  <p style="font-size: 0.7rem; color: var(--gold-300); margin: 0; font-weight: 700;">ELT-01:
+                    Bio-Individual Nutrition</p>
+                  <div style="background: rgba(255,255,255,0.08); height: 4px; border-radius: 2px; margin-top: 6px;">
+                    <div style="background: var(--gold-400); width: 65%; height: 100%; border-radius: 2px;"></div>
+                  </div>
+                </div>
+
+                <div class="screen-widget">
+                  <h6>Daily Pillars</h6>
+                  <div class="screen-habit-pill">
+                    <span>Morning Cortisol Breathwork</span>
+                    <i class="fa-solid fa-check" style="color: var(--emerald-400);"></i>
+                  </div>
+                  <div class="screen-habit-pill">
+                    <span>Clean Glycemic Lunch Protocol</span>
+                    <i class="fa-solid fa-check" style="color: var(--emerald-400);"></i>
+                  </div>
+                  <div class="screen-habit-pill">
+                    <span>Town-Hall Alignment Briefing</span>
+                    <i class="fa-regular fa-clock" style="color: var(--gold-400);"></i>
+                  </div>
+                </div>
+
+                <div
+                  style="margin-top: auto; background: var(--gold-gradient); color: #ffffff; border-radius: 8px; padding: 8px; text-align: center; font-size: 0.7rem; font-weight: 800;">
+                  <i class="fa-solid fa-play"></i> RESUME AUDIO LESSON 06
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Official Merchandise Store Grid -->
+        <div class="merch-header-row">
+          <div>
+            <h3 class="font-serif" style="font-size: 1.8rem;">Official The Good Boss Collection</h3>
+            <p style="color: var(--text-muted);">Crafted with unyielding standards for executives who walk the talk.</p>
+          </div>
+          <button class="btn btn-gold-outline btn-sm" onclick="openMerchBagModal()">
+            <i class="fa-solid fa-bag-shopping"></i> View Cart (<span id="cartCount">0</span>)
+          </button>
+        </div>
+
+        <div class="merch-grid" id="merchGrid">
+          <!-- Populated from COURSE_DATA.appAndMerch.merch -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         TESTIMONIALS & EXECUTIVE SOCIAL PROOF
+         ====================================================================== -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-star"></i> Boardroom Validation</span>
+          <h2 class="section-title">Tested in <span class="gradient-text-gold font-serif">High-Stakes Arenas</span></h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "The 3-tier pyramid completely rewired our executive team. Starting with personal governance and nutrition
+              before touching org structure made all the difference. Our \$35,000 corporate intervention paid for itself
+              within 45 days."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">DH</div>
+              <div class="author-info">
+                <h5>David Henderson</h5>
+                <span>CEO, Apex Logistics &bull; Corporate Turnaround</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "I took the 12-week course and selected the Cortisol Mastery elective for Phase 2. As a founder managing
+              120 employees, I was on the brink of chronic burnout. This program saved my physical health and doubled my
+              company's valuation."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SM</div>
+              <div class="author-info">
+                <h5>Sarah Morales</h5>
+                <span>Founder &amp; Managing Director &bull; 12-Week Alumni</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Coming back as a returning client for Phase 2 &amp; 3 at \$2,000 was the easiest decision I made this
+              year. The 3-day workshop gave our division directors the exact turnaround playbooks needed to conquer our
+              market shift."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">TL</div>
+              <div class="author-info">
+                <h5>Thomas Langford</h5>
+                <span>VP of Operations &bull; Returning Client &amp; Workshop Attendee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         FREQUENTLY ASKED QUESTIONS (FAQ)
+         ====================================================================== -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Clarifications</span>
+          <h2 class="section-title">Frequently Asked <span class="gradient-text-gold font-serif">Questions</span></h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item active">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>How does the 1-course-per-week phased structure work?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              The 12-week program is divided into three 4-week phases. Phase 1 (Weeks 1-4) is fixed on the Pyramid Base
+              (Life and Self-Development). Phase 2 (Weeks 5-8) focuses on Wellness and Nutrition where you choose 1
+              specialized elective from our 20 curated tracks. Phase 3 (Weeks 9-12) is fixed on the Pyramid Top Tier
+              (Leadership and Organizational Development). Each week unlocks one intensive course module with practical
+              deliverables.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>How do returning clients start directly at Phase 2 for $2,000?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              If you have previously graduated from Phase 1 or completed a verified The Good Boss workshop, you are
+              eligible for the \$2,000 Returning Client Track. You bypass Phase 1 and immediately dive into your chosen
+              Phase 2 elective and Phase 3 capstone for an 8-week accelerated journey.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>What is covered under the $35,000 Corporate Intervention?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              Our \$35,000 corporate package is a comprehensive 90-day intervention covering the four vital corporate
+              pillars: Leadership Development (bench grooming and C-suite cohesion), Corporate Turnarounds (operational
+              and cultural triage), Change Maxing (high-velocity change management without fatigue), and Growth
+              Acceleration (go-to-market and scaling engines). It includes executive coaching for up to 25 leaders,
+              war-room playbooks, and tangible metric milestones.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>How do the 3-Day Workshop group discounts function?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              A single seat is \$1,250 for 3 days of intensive training. Delegations of 2 unlock 10% off (\$1,125/seat),
+              delegations of 3-4 unlock 15% off (\$1,062.50/seat), and delegations of 5 or more receive 25% off
+              (\$937.50/seat). Use our interactive calculator on this page to view your total savings.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>How do I apply coupon codes at checkout?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              In the Pricing section, enter your coupon code into the box (e.g., <code>BOSS500</code> for \$500 off,
+              <code>VIP20</code> for 20% off) and click "Apply Code". The discount is instantly calculated and deducted
+              from both the \$3,000 and \$2,000 plans before you complete enrollment.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <div class="nav-brand" style="margin-bottom: 16px;">
+            <img src="assets/images/brand-logo.png" alt="The Good Boss" class="brand-logo">
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px;">
+            The definitive executive transformation framework. Grounded in self-governance, fueled by biological health,
+            and executed at the apex of organizational scale.
+          </p>
+          <div style="display: flex; gap: 14px; font-size: 1.1rem; color: var(--gold-400);">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>The Funnel Programs</h5>
+          <ul>
+            <li><a href="#courses">12-Week Apex Course (\$3,000)</a></li>
+            <li><a href="#pricing" onclick="setPlanAndScroll('returning')">Returning Client Track (\$2,000)</a></li>
+            <li><a href="#electives">20 Phase 2 Electives</a></li>
+            <li><a href="#workshop">3-Day Intensive Workshop (\$1,250)</a></li>
+            <li><a href="#corporate">Corporate Interventions (\$35,000)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Pillars</h5>
+          <ul>
+            <li><a href="#corporate">Leadership Development</a></li>
+            <li><a href="#corporate">Corporate Turnarounds</a></li>
+            <li><a href="#corporate">Change Maxing Management</a></li>
+            <li><a href="#corporate">Growth Acceleration Engine</a></li>
+            <li><a href="#pyramid">The 3-Tier Pyramid Framework</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Ecosystem &amp; Support</h5>
+          <ul>
+            <li><a href="#ecosystem">The Good Boss Mobile App</a></li>
+            <li><a href="#ecosystem">Executive Apparel &amp; Merch</a></li>
+            <li><a href="#intro-video">Watch Introduction Video</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li><a href="mailto:admissions@thegoodboss.com">Direct Admissions Inquiry</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 THE GOOD BOSS&trade;. All Worldwide Rights Reserved. Built for Apex Leaders.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#">Privacy Protocol</a>
+          <a href="#">Terms of Engagement</a>
+          <a href="login.html">Client Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL 1: INTRODUCTION VIDEO MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="videoModal">
+    <div class="modal-content-box" style="max-width: 860px; padding: 24px;">
+      <button class="modal-close-btn" onclick="closeModal('videoModal')" aria-label="Close Modal">&times;</button>
+      <div class="modal-header">
+        <span class="badge"
+          style="background: var(--gold-gradient); color: #ffffff; font-weight: 800; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px;">COURSE
+          BRIEFING</span>
+        <h3 class="font-serif" style="margin-top: 6px;">The Good Boss Methodology &bull; Video Masterclass</h3>
+        <p>1 Course a Week &bull; The 3-Tier Pyramid &bull; Phase 2 Electives &bull; Returning Client Entry</p>
+      </div>
+
+      <!-- Simulated High-End HTML5 Video Player -->
+      <div
+        style="position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-gold); margin-bottom: 20px;">
+        <div id="videoSimulatorScreen"
+          style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: radial-gradient(circle, #1a233a 0%, #080c14 100%); text-align: center; padding: 24px;">
+          <div
+            style="width: 72px; height: 72px; border-radius: 50%; background: var(--gold-gradient); color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 14px; cursor: pointer; box-shadow: 0 0 35px rgba(237, 36, 51, 0.35);"
+            onclick="toggleSimulatedPlay()">
+            <i class="fa-solid fa-play" id="simPlayIcon"></i>
+          </div>
+          <h4 style="color: #fff; font-size: 1.2rem; margin-bottom: 6px;">The Good Boss: Introduction to the Apex
+            Journey</h4>
+          <p style="color: var(--text-muted); font-size: 0.85rem; max-width: 520px;" id="simPlayStatus">
+            Click play to watch the orientation briefing with Founder &amp; Master Coach.
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; font-size: 0.825rem; background: var(--bg-card); padding: 16px; border-radius: 8px;">
+        <div><strong>Chapter 01:</strong> Why Most Leadership Coaching Fails without the Base Tier</div>
+        <div><strong>Chapter 02:</strong> Unlocking the 20 Wellness Electives in Phase 2</div>
+        <div><strong>Chapter 03:</strong> Executing \$35k Turnaround Interventions</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 2: CHECKOUT & ENROLLMENT MODAL (WITH COUPON CALCULATOR)
+       ======================================================================== -->
+  <div class="modal-overlay" id="enrollmentModal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" onclick="closeModal('enrollmentModal')" aria-label="Close Modal">&times;</button>
+      <div class="modal-header">
+        <span class="badge"
+          style="background: var(--gold-gradient); color: #ffffff; font-weight: 800; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px;">SECURE
+          ADMISSION</span>
+        <h3 class="font-serif" style="margin-top: 6px;" id="modalPlanTitle">Enroll in 12-Week Apex Course</h3>
+        <p id="modalPlanSubtitle">Complete Phased Journey &bull; 1 Course Per Week</p>
+      </div>
+
+      <!-- Live Order Summary Box -->
+      <div
+        style="background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: var(--radius-md); padding: 18px; margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 6px;">
+          <span style="color: var(--text-muted);">Selected Program:</span>
+          <strong id="modalSummaryPlanName">12-Week Apex Program (\$3,000)</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 6px;">
+          <span style="color: var(--text-muted);">Phase 2 Elective Choice:</span>
+          <strong id="modalSummaryElective" style="color: var(--emerald-400);">ELT-01: Bio-Individual Nutrition</strong>
+        </div>
+        <div
+          style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 6px; color: var(--emerald-400);"
+          id="modalSummaryCouponRow">
+          <span>Coupon Rebate (<span id="modalSummaryCouponCode">BOSS500</span>):</span>
+          <strong id="modalSummaryCouponDiscount">-\$500</strong>
+        </div>
+        <div
+          style="display: flex; justify-content: space-between; font-size: 1.25rem; font-weight: 800; padding-top: 10px; border-top: 1px solid var(--border-subtle); color: var(--text-main);">
+          <span>Final Investment:</span>
+          <span id="modalSummaryFinalTotal" style="color: var(--gold-300);">\$2,500</span>
+        </div>
+      </div>
+
+      <form class="modal-form" onsubmit="handleEnrollmentSubmit(event)">
+        <div class="form-group">
+          <label>Full Legal / Executive Name</label>
+          <input type="text" required placeholder="e.g. Alexandra Vance">
+        </div>
+        <div class="form-group">
+          <label>Executive Corporate Email</label>
+          <input type="email" required placeholder="e.g. alexandra@enterprise.com">
+        </div>
+        <div class="form-group">
+          <label>Organization &amp; Current Title</label>
+          <input type="text" required placeholder="e.g. Chief Operating Officer, Nexus Group">
+        </div>
+        <div class="form-group">
+          <label>Verify Phase 2 Elective Specialization</label>
+          <select id="modalElectiveSelect" onchange="syncSelectedElectiveFromModal(this.value)">
+            <!-- Populated via funnel-data.js -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Are You a Returning Client?</label>
+          <select id="modalReturningSelect" onchange="toggleModalReturningPlan(this.value)">
+            <option value="no">No - First Time Client (12-Week Program)</option>
+            <option value="yes">Yes - Returning Client (8-Week Track, \$2,000)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 10px;">
+          <span>Complete Secure Enrollment &rarr;</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 3: CORPORATE BRIEFING REQUEST MODAL ($35,000)
+       ======================================================================== -->
+  <div class="modal-overlay" id="corporateModal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" onclick="closeModal('corporateModal')" aria-label="Close Modal">&times;</button>
+      <div class="modal-header">
+        <span class="badge"
+          style="background: var(--gold-gradient); color: #ffffff; font-weight: 800; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px;">\$35,000
+          BESPOKE INTERVENTION</span>
+        <h3 class="font-serif" style="margin-top: 6px;">Request Boardroom Consultation</h3>
+        <p>Leadership Development &bull; Corporate Turnarounds &bull; Change Maxing &bull; Growth Acceleration</p>
+      </div>
+
+      <form class="modal-form" onsubmit="handleCorporateSubmit(event)">
+        <div class="form-group">
+          <label>Executive Contact Name &amp; Title</label>
+          <input type="text" required placeholder="e.g. Julian Drake, CEO / Board Chair">
+        </div>
+        <div class="form-group">
+          <label>Company Name &amp; Headquarters</label>
+          <input type="text" required placeholder="e.g. Sovereign Industries (New York, NY)">
+        </div>
+        <div class="form-group">
+          <label>Company Size / Executive Team Count</label>
+          <select required>
+            <option value="">Select executive headcount...</option>
+            <option value="5-15">5 - 15 Executives</option>
+            <option value="15-30">15 - 30 Executives (Standard \$35K Scope)</option>
+            <option value="30+">30+ Executives (Custom Enterprise Scope)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Primary Intervention Requirement</label>
+          <select required>
+            <option value="">Select core focus...</option>
+            <option value="Turnarounds">Corporate Turnaround &amp; Triage (Distressed/Stalled)</option>
+            <option value="ChangeMaxing">Change Maxing &amp; High-Velocity Transformation</option>
+            <option value="LeadershipDev">Leadership Development &amp; C-Suite Cohesion</option>
+            <option value="GrowthAccel">Growth Acceleration &amp; GTM Engine Overhaul</option>
+            <option value="Comprehensive">Comprehensive 4-Pillar Intervention (\$35,000)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Briefly describe the core operational bottleneck or urgency</label>
+          <textarea rows="3"
+            placeholder="Provide context regarding market challenges, team friction, or growth goals..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 10px;">
+          <span>Submit Confidential Boardroom Request</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 4: 3-DAY WORKSHOP BOOKING MODAL ($1,250 + GROUP DISCOUNTS)
+       ======================================================================== -->
+  <div class="modal-overlay" id="workshopModal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" onclick="closeModal('workshopModal')" aria-label="Close Modal">&times;</button>
+      <div class="modal-header">
+        <span class="badge"
+          style="background: var(--gold-gradient); color: #ffffff; font-weight: 800; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px;">3-DAY
+          IMMERSIVE CRUCIBLE</span>
+        <h3 class="font-serif" style="margin-top: 6px;">Reserve Workshop Delegation Seats</h3>
+        <p>\$1,250 Per Attendee &bull; Automatic Group Discounts Applied</p>
+      </div>
+
+      <div
+        style="background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: var(--radius-md); padding: 18px; margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 6px;">
+          <span>Reserved Seats:</span>
+          <strong id="workshopModalSeats">1 Attendee</strong>
+        </div>
+        <div
+          style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 6px; color: var(--emerald-400);">
+          <span>Applied Group Discount:</span>
+          <strong id="workshopModalDiscount">0% OFF</strong>
+        </div>
+        <div
+          style="display: flex; justify-content: space-between; font-size: 1.25rem; font-weight: 800; padding-top: 10px; border-top: 1px solid var(--border-subtle); color: var(--text-main);">
+          <span>Total Workshop Investment:</span>
+          <span id="workshopModalTotal" style="color: var(--gold-300);">\$1,250</span>
+        </div>
+      </div>
+
+      <form class="modal-form" onsubmit="handleWorkshopSubmit(event)">
+        <div class="form-group">
+          <label>Lead Delegate / Executive Name</label>
+          <input type="text" required placeholder="e.g. Richard Thorne">
+        </div>
+        <div class="form-group">
+          <label>Corporate Email</label>
+          <input type="email" required placeholder="e.g. richard@thorne-enterprises.com">
+        </div>
+        <div class="form-group">
+          <label>Preferred Workshop Cohort Date</label>
+          <select required>
+            <option value="Cohort-1">Q1 Executive Crucible (March 18-20, 2026)</option>
+            <option value="Cohort-2">Q2 Executive Crucible (May 14-16, 2026)</option>
+            <option value="Cohort-3">Q3 Executive Crucible (August 20-22, 2026)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 10px;">
+          <span>Confirm Reservation &rarr;</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 5: APP DOWNLOAD MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="appModal">
+    <div class="modal-content-box" style="text-align: center;">
+      <button class="modal-close-btn" onclick="closeModal('appModal')" aria-label="Close Modal">&times;</button>
+      <div
+        style="width: 60px; height: 60px; border-radius: var(--radius-md); background: var(--gold-gradient); color: #ffffff; font-size: 1.8rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto;">
+        <i class="fa-solid fa-mobile-screen"></i>
+      </div>
+      <h3 class="font-serif" style="margin-bottom: 8px;">Download The Good Boss App</h3>
+      <p style="margin-bottom: 24px;">Scan the QR code or enter your executive phone number to receive your instant VIP
+        portal access token.</p>
+
+      <div
+        style="background: #fff; width: 170px; height: 170px; margin: 0 auto 20px auto; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 4px solid var(--gold-400);">
+        <i class="fa-solid fa-qrcode" style="font-size: 7.5rem; color: #0b0f19;"></i>
+      </div>
+
+      <div class="form-group" style="max-width: 380px; margin: 0 auto 16px auto;">
+        <input type="tel" placeholder="Enter mobile number for instant SMS link..." style="text-align: center;">
+      </div>
+
+      <button class="btn btn-primary"
+        onclick="showToast('VIP App Download Link Sent via SMS!', 'success'); closeModal('appModal');">
+        Send App Download Link
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 6: MERCHANDISE CART DRAWER / MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="merchBagModal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" onclick="closeModal('merchBagModal')" aria-label="Close Modal">&times;</button>
+      <div class="modal-header">
+        <span class="badge"
+          style="background: var(--gold-gradient); color: #ffffff; font-weight: 800; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px;">OFFICIAL
+          STORE</span>
+        <h3 class="font-serif" style="margin-top: 6px;">Your Merch Bag</h3>
+        <p>Premium Executive Apparel &amp; Focus Tools</p>
+      </div>
+
+      <div id="cartItemsContainer" style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+        <!-- Populated via JS -->
+      </div>
+
+      <div
+        style="display: flex; justify-content: space-between; font-size: 1.2rem; font-weight: 800; padding-top: 14px; border-top: 1px solid var(--border-subtle); margin-bottom: 20px;">
+        <span>Cart Total:</span>
+        <span id="cartTotalPrice" style="color: var(--gold-300);">\$0</span>
+      </div>
+
+      <button class="btn btn-primary btn-lg" style="width: 100%;" onclick="handleMerchCheckout()">
+        <span>Proceed to Secure Merch Checkout</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       TOAST NOTIFICATION CONTAINER
+       ======================================================================== -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/funnel-data.js?v=20261124-funnel"></script>
+  <script src="assets/js/funnel.js?v=20261124-funnel"></script>
+</body>
+
+</html>

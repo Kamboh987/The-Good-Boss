@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" class="portal-document">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>My Courses Detail - The Good Boss</title>
+    <link rel="stylesheet" href="assets/css/style.css?v=20261124-17">
+</head>
+
+<body class="portal-page">
+    <div class="portal portal-shell courses-portal detail-portal">
+        <aside class="sidebar dashboard-sidebar">
+            <div class="dashboard-brand">
+                <div class="figma-logo"><img src="assets/images/figma/logo.png" alt="The Good Boss"></div>
+            </div>
+            <div class="sidebar-user"><img src="assets/images/figma/avatar.png" alt="Margaret Mead"><strong>Margaret
+                    Mead</strong><span>User</span></div>
+            <nav class="nav-list dashboard-nav">
+                <a class="nav-item" href="dashboard.html?v=20261124-18"><svg class="nav-icon" viewBox="0 0 24 24">
+                        <rect x="4" y="4" width="6" height="6" />
+                        <rect x="14" y="4" width="6" height="6" />
+                        <rect x="4" y="14" width="6" height="6" />
+                        <rect x="14" y="14" width="6" height="6" />
+                    </svg><span>Dashboard</span></a><a class="nav-item" href="index.html?v=20261124-20"><svg class="nav-icon" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7M5 9v11h14V9M9 20v-6h6"/></svg><span>Website Home</span></a><a class="nav-item" href="courses.html?v=20261124-10"><span>My
+                        Courses</span></a><a class="nav-item" href="billing.html?v=20261124-2"><span>Subscription and
+                        Billing</span></a><a class="nav-item" href="profile.html?v=20261124-5"><span>Profile</span></a>
+            </nav><button class="logout-btn" type="button">Logout</button>
+        </aside>
+        <main class="main">
+            <header class="topbar portal-topbar courses-topbar"><label class="search"><input type="text" placeholder="Search here..."
+                        aria-label="Search"><svg viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="6" />
+                        <path d="m16 16 5 5" />
+                    </svg></label>
+                <div class="top-actions"><button class="icon-button" aria-label="Notifications"><svg
+                            viewBox="0 0 24 24">
+                            <path d="M18 16H6l2-2V9a4 4 0 0 1 8 0v5zM10 19h4" />
+                        </svg></button><button class="icon-button" aria-label="Messages"><svg viewBox="0 0 24 24">
+                            <path d="M4 5h16v11H9l-5 4z" />
+                        </svg></button><a class="profile-mini" href="profile.html?v=20261124-5"><img
+                            src="assets/images/figma/mini-avatar.png" alt="">
+                        <div><strong>Margaret Mead</strong><span>User</span></div>
+                    </a></div>
+            </header>
+            <div class="content detail-page-content">
+                <div class="detail-layout">
+                    <section class="detail-main-card">
+                        <h1 class="detail-heading">My Courses Detail</h1>
+                        <div class="detail-media">
+                            <div class="detail-player">
+                                <video class="detail-video" id="courseVideo" playsinline preload="none" poster="assets/images/figma/course-3.png" aria-label="Course lesson video preview">
+                                    <source src="assets/videos/course-placeholder.mp4" type="video/mp4">
+                                </video>
+                                <button class="detail-play" id="playLesson" aria-label="Play lesson">▶</button>
+                                <div class="detail-controls">
+                                    <button type="button" id="videoVolume" aria-label="Mute video">
+                                        <svg viewBox="0 0 24 24"><path d="M4 10v4h4l5 4V6l-5 4H4z"/><path d="M16 9a5 5 0 0 1 0 6"/></svg>
+                                    </button>
+                                    <div class="detail-timeline" id="videoTimeline" role="slider" tabindex="0" aria-label="Seek video" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="videoProgress"></span></div>
+                                    <button type="button" id="videoFullscreen" aria-label="Enter fullscreen">
+                                        <svg viewBox="0 0 24 24"><path d="M8 4H4v4M16 4h4v4M4 16v4h4M20 16v4h-4"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="detail-thumbnails" aria-label="Course video thumbnails">
+                                <img src="assets/images/figma/quiz-1.png" alt="">
+                                <img src="assets/images/figma/quiz-2.png" alt="">
+                                <img src="assets/images/figma/course-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="detail-copy">
+                            <h2>Consec Adipisicing Elit Dummy Here</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <p>Quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                            <button class="download-btn detail-download" type="button" data-file="Course-Guides.pdf">Downloadable Guides</button>
+                        </div>
+                    </section>
+                    <aside class="related-courses-panel">
+                        <h2>Related Courses</h2>
+                        <div class="related-courses-list">
+                            <a class="related-course" href="learning.html?v=20261124-10">
+                                <img src="assets/images/figma/quiz-1.png" alt="">
+                                <span><b>01</b><strong>Lorem Ipsum Dummy</strong><small>Lorem ipsum dolor sit amet, consectetur adipiscing</small></span>
+                            </a>
+                            <a class="related-course" href="learning.html?v=20261124-10">
+                                <img src="assets/images/figma/quiz-2.png" alt="">
+                                <span><b>02</b><strong>Lorem Ipsum Dummy</strong><small>Lorem ipsum dolor sit amet, consectetur adipiscing</small></span>
+                            </a>
+                            <a class="related-course" href="learning.html?v=20261124-10">
+                                <img src="assets/images/figma/course-1.png" alt="">
+                                <span><b>03</b><strong>Lorem Ipsum Dummy</strong><small>Lorem ipsum dolor sit amet, consectetur adipiscing</small></span>
+                            </a>
+                            <a class="related-course" href="learning.html?v=20261124-10">
+                                <img src="assets/images/figma/profile-avatar.png" alt="">
+                                <span><b>04</b><strong>Lorem Ipsum Dummy</strong><small>Lorem ipsum dolor sit amet, consectetur adipiscing</small></span>
+                            </a>
+                            <a class="related-course" href="learning.html?v=20261124-10">
+                                <img src="assets/images/figma/course-3.png" alt="">
+                                <span><b>05</b><strong>Lorem Ipsum Dummy</strong><small>Lorem ipsum dolor sit amet, consectetur adipiscing</small></span>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="assets/js/main.js?v=20261124-10"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" class="portal-document">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - The Good Boss</title>
+  <link rel="stylesheet" href="assets/css/style.css?v=20261124-18">
+</head>
+
+<body class="portal-page">
+  <div class="portal portal-shell">
+    <aside class="sidebar dashboard-sidebar">
+      <div class="dashboard-brand">
+        <div class="figma-logo"><img src="assets/images/figma/logo.png" alt="The Good Boss"></div>
+      </div>
+      <div class="sidebar-user">
+        <img src="assets/images/figma/avatar.png" alt="Margaret Mead">
+        <strong>Margaret Mead</strong>
+        <span>User</span>
+      </div>
+      <nav class="nav-list dashboard-nav">
+        <a class="nav-item active" href="dashboard.html?v=20261124-18"><svg class="nav-icon" viewBox="0 0 24 24">
+            <rect x="4" y="4" width="6" height="6" />
+            <rect x="14" y="4" width="6" height="6" />
+            <rect x="4" y="14" width="6" height="6" />
+            <rect x="14" y="14" width="6" height="6" />
+          </svg><span>Dashboard</span></a>
+        <a class="nav-item" href="index.html?v=20261124-20"><svg class="nav-icon" viewBox="0 0 24 24">
+            <path d="m3 10 9-7 9 7M5 9v11h14V9M9 20v-6h6" />
+          </svg><span>Website Home</span></a>
+        <a class="nav-item" href="courses.html?v=20261124-10"><span>My Courses</span></a>
+        <a class="nav-item" href="billing.html?v=20261124-2"><span>Subscription and Billing</span></a>
+        <a class="nav-item" href="profile.html?v=20261124-5"><span>Profile</span></a>
+      </nav>
+      <button class="logout-btn" type="button">Logout</button>
+    </aside>
+    <main class="main">
+      <header class="topbar dashboard-topbar">
+        <label class="search"><input type="text" placeholder="Search here..." aria-label="Search"><svg
+            viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="6" />
+            <path d="m16 16 5 5" />
+          </svg></label>
+        <div class="top-actions">
+          <button class="icon-button" aria-label="Notifications"><svg viewBox="0 0 24 24">
+              <path d="M18 16H6l2-2V9a4 4 0 0 1 8 0v5zM10 19h4" />
+            </svg></button>
+          <button class="icon-button" aria-label="Messages"><svg viewBox="0 0 24 24">
+              <path d="M4 5h16v11H9l-5 4z" />
+            </svg></button>
+          <div class="profile-mini"><img src="assets/images/figma/mini-avatar.png" alt="">
+            <div><strong>Margaret Mead</strong><span>User</span></div>
+          </div>
+        </div>
+      </header>
+      <div class="content dashboard-content figma-dashboard">
+        <div class="dashboard-main">
+          <section class="hero figma-hero">
+            <div>
+              <h1>Welcome Margaret Mead!</h1>
+              <p>Manage your courses, track progress, and update your profile.</p><button>Book a session</button>
+            </div>
+          </section>
+          <div class="stats-row figma-stats">
+            <div class="stat-card"><span class="stat-icon"><svg viewBox="0 0 24 24">
+                  <rect x="4" y="5" width="16" height="14" />
+                  <path d="M8 3v4m8-4v4M8 12h8" />
+                </svg></span>
+              <div><strong>Total courses</strong><span>20 Courses Available</span></div>
+            </div>
+            <div class="stat-card"><span class="stat-icon"><svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="m7.5 12 3 3 6-7" />
+                </svg></span>
+              <div><strong>Completed courses</strong><span>01 Courses Completed</span></div>
+            </div>
+            <div class="stat-card"><span class="stat-icon"><svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="m10 8 6 4-6 4z" />
+                </svg></span>
+              <div><strong>Ongoing courses</strong><span>3 Courses In Progress</span></div>
+            </div>
+          </div>
+          <section class="section enrolled-section">
+            <div class="section-heading">
+              <h2>My Enrolled Courses</h2>
+              <div class="carousel-nav"><span>‹</span><button>›</button></div>
+            </div>
+            <div class="course-grid figma-courses">
+              <article class="course-card"><img src="assets/images/figma/course-1.png" alt="">
+                <div class="course-meta">
+                  <h3>Consec Adipisicing Elit</h3><b>01</b>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.</p>
+                <div class="progress"><span style="width:100%"></span></div>
+                <div class="progress-label"><span></span><strong>100%</strong></div>
+                <div class="course-footer"><span class="complete">✓ Completed</span></div>
+              </article>
+              <article class="course-card"><img src="assets/images/figma/course-2.png" alt="">
+                <div class="course-meta">
+                  <h3>Consec Adipisicing Elit</h3><b>02</b>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.</p>
+                <div class="progress"><span style="width:28%"></span></div>
+                <div class="progress-label"><span></span><strong>28%</strong></div>
+                <div class="course-footer"><button class="continue-btn">Continue</button></div>
+              </article>
+              <article class="course-card"><img src="assets/images/figma/course-3.png" alt="">
+                <div class="course-meta">
+                  <h3>Consec Adipisicing Elit</h3><b>03</b>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.</p>
+                <div class="progress"><span style="width:0%"></span></div>
+                <div class="progress-label"><span></span><strong>0%</strong></div>
+                <div class="course-footer"><button class="continue-btn">Continue</button></div>
+              </article>
+            </div>
+          </section>
+        </div>
+        <aside class="dashboard-right">
+          <section class="profile-card figma-profile-card">
+            <div class="profile-head"><img src="assets/images/figma/profile-avatar.png" alt="">
+              <div><strong>Margaret Mead</strong><span>User</span><small>📍 Losen Ipsum 123 Dummy</small></div>
+            </div>
+            <div class="profile-stats">
+              <div><strong>DOB</strong><span>24-Feb-1990</span></div>
+              <div><strong>Status</strong><span>Premium</span></div>
+              <div><strong>Last online</strong><span>22-Mar-2025</span></div>
+            </div>
+          </section>
+          <section class="quizzes figma-quizzes">
+            <div class="small-heading">
+              <h2>Quizzes</h2>
+            </div>
+            <div class="quiz-list">
+              <div class="quiz-item"><img src="assets/images/figma/quiz-1.png" alt="">
+                <div><strong>Dummy here</strong><span>Consec Adipisicing Elit</span></div><span class="arrow">›</span>
+              </div>
+              <div class="quiz-item"><img src="assets/images/figma/quiz-2.png" alt="">
+                <div><strong>Dummy here</strong><span>Consec Adipisicing Elit</span></div><span class="arrow">›</span>
+              </div>
+              <div class="quiz-item"><img src="assets/images/figma/quiz-3.png" alt="">
+                <div><strong>Dummy here</strong><span>Consec Adipisicing Elit</span></div><span class="arrow">›</span>
+              </div>
+            </div>
+          </section>
+          <section class="resources figma-resources">
+            <div class="small-heading">
+              <h2>PDF Resources</h2>
+            </div>
+            <div class="resource-list">
+              <div class="resource-item"><span class="pdf-icon">PDF</span>
+                <div><strong>Dummy text here</strong><span>Lorem Ipsum is simply dummy text.</span></div>
+              </div>
+              <div class="resource-item"><span class="pdf-icon">PDF</span>
+                <div><strong>Dummy text here</strong><span>Lorem Ipsum is simply dummy text.</span></div>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+  </div>
+  <div class="modal-backdrop" id="bookingModal">
+    <div class="modal">
+      <h2>Book a session</h2>
+      <div class="form-grid">
+        <div class="form-field"><label>Session date</label><input id="sessionDate" type="date"></div>
+        <div class="form-field"><label>Time</label><select>
+            <option>09:00 AM</option>
+            <option>11:30 AM</option>
+            <option>02:00 PM</option>
+          </select></div>
+      </div>
+      <div class="modal-actions"><button class="secondary-btn modal-close">Cancel</button><button class="primary-btn"
+          id="confirmBooking">Confirm</button></div>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="assets/js/main.js?v=20261124-6"></script>
+</body>
+
+</html>

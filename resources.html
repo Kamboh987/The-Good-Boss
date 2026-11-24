@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" class="portal-document">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Resources - The Good Boss</title>
+    <link rel="stylesheet" href="assets/css/style.css?v=20261124-16">
+</head>
+
+<body class="portal-page">
+    <div class="portal portal-shell">
+        <aside class="sidebar dashboard-sidebar">
+            <div class="dashboard-brand">
+                <div class="figma-logo"><img src="assets/images/figma/logo.png" alt="The Good Boss"></div>
+            </div>
+            <div class="sidebar-user"><img src="assets/images/figma/avatar.png" alt="Margaret Mead"><strong>Margaret
+                    Mead</strong><span>User</span></div>
+            <nav class="nav-list dashboard-nav"><a class="nav-item" href="dashboard.html?v=20261124-18"><svg class="nav-icon"
+                        viewBox="0 0 24 24">
+                        <rect x="4" y="4" width="6" height="6" />
+                        <rect x="14" y="4" width="6" height="6" />
+                        <rect x="4" y="14" width="6" height="6" />
+                        <rect x="14" y="14" width="6" height="6" />
+                    </svg><span>Dashboard</span></a><a class="nav-item" href="index.html?v=20261124-20"><svg class="nav-icon" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7M5 9v11h14V9M9 20v-6h6"/></svg><span>Website Home</span></a><a class="nav-item" href="courses.html?v=20261124-10"><span>My
+                        Courses</span></a><a class="nav-item"
+                    href="learning.html?v=20261124-10"><span>Learning</span></a><a class="nav-item active"
+                    href="resources.html?v=20261124-5"><span>Resources</span></a><a class="nav-item"
+                    href="profile.html?v=20261124-5"><span>Profile</span></a></nav><button class="logout-btn"
+                type="button">Logout</button>
+        </aside>
+        <main class="main">
+            <header class="topbar portal-topbar"><label class="search"><input type="text" placeholder="Search resources"
+                        aria-label="Search"><svg viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="6" />
+                        <path d="m16 16 5 5" />
+                    </svg></label>
+                <div class="top-actions"><button class="icon-button" aria-label="Notifications"><svg
+                            viewBox="0 0 24 24">
+                            <path d="M18 16H6l2-2V9a4 4 0 0 1 8 0v5zM10 19h4" />
+                        </svg></button><button class="icon-button" aria-label="Messages"><svg viewBox="0 0 24 24">
+                            <path d="M4 5h16v11H9l-5 4z" />
+                        </svg></button><a class="profile-mini" href="profile.html?v=20261124-5"><img
+                            src="assets/images/figma/mini-avatar.png" alt="">
+                        <div><strong>Margaret Mead</strong><span>User</span></div>
+                    </a></div>
+            </header>
+            <div class="content">
+                <div class="page-title">
+                    <div>
+                        <h1>PDF Resources</h1>
+                        <p>Download course materials and reference documents</p>
+                    </div>
+                </div>
+                <div class="resource-table">
+                    <div class="resource-table-head"><span></span><span>Resource
+                            name</span><span>Course</span><span>Updated</span><span>Action</span></div>
+                    <div class="resource-row"><span class="pdf-icon">PDF</span><strong>Leadership
+                            handbook</strong><span>Team Leadership Basics</span><span>22 Mar 2025</span><button
+                            class="download-btn" data-file="Leadership Handbook.pdf">Download</button></div>
+                    <div class="resource-row"><span class="pdf-icon">PDF</span><strong>Communication
+                            guide</strong><span>Executive Communication</span><span>18 Mar 2025</span><button
+                            class="download-btn" data-file="Communication Guide.pdf">Download</button></div>
+                    <div class="resource-row"><span class="pdf-icon">PDF</span><strong>Session
+                            worksheet</strong><span>Consecon Counseling Elite</span><span>14 Mar 2025</span><button
+                            class="download-btn" data-file="Session Worksheet.pdf">Download</button></div>
+                    <div class="resource-row"><span class="pdf-icon">PDF</span><strong>Culture
+                            framework</strong><span>Workplace Culture</span><span>10 Mar 2025</span><button
+                            class="download-btn" data-file="Culture Framework.pdf">Download</button></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="assets/js/main.js?v=20261124-6"></script>
+</body>
+
+</html>

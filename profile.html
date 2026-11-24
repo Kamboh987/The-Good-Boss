@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" class="portal-document">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Profile - The Good Boss</title>
+  <link rel="stylesheet" href="assets/css/style.css?v=20261124-16">
+</head>
+
+<body class="portal-page">
+  <div class="portal portal-shell">
+    <aside class="sidebar dashboard-sidebar">
+      <div class="dashboard-brand">
+        <div class="figma-logo"><img src="assets/images/figma/logo.png" alt="The Good Boss"></div>
+      </div>
+      <div class="sidebar-user"><img src="assets/images/figma/avatar.png" alt="Margaret Mead"><strong>Margaret
+          Mead</strong><span>User</span></div>
+      <nav class="nav-list dashboard-nav"><a class="nav-item" href="dashboard.html?v=20261124-18"><svg class="nav-icon"
+            viewBox="0 0 24 24">
+            <rect x="4" y="4" width="6" height="6" />
+            <rect x="14" y="4" width="6" height="6" />
+            <rect x="4" y="14" width="6" height="6" />
+            <rect x="14" y="14" width="6" height="6" />
+          </svg><span>Dashboard</span></a><a class="nav-item" href="index.html?v=20261124-20"><svg class="nav-icon" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7M5 9v11h14V9M9 20v-6h6"/></svg><span>Website Home</span></a><a class="nav-item" href="courses.html?v=20261124-10"><span>My
+            Courses</span></a><a class="nav-item" href="learning.html?v=20261124-10"><span>Learning</span></a><a
+          class="nav-item" href="resources.html?v=20261124-5"><span>Resources</span></a><a class="nav-item active"
+          href="profile.html?v=20261124-5"><span>Profile</span></a></nav><button class="logout-btn"
+        type="button">Logout</button>
+    </aside>
+    <main class="main">
+      <header class="topbar portal-topbar"><label class="search"><input type="text"
+            placeholder="Search profile settings" aria-label="Search"><svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="6" />
+            <path d="m16 16 5 5" />
+          </svg></label>
+        <div class="top-actions"><button class="icon-button" aria-label="Notifications"><svg viewBox="0 0 24 24">
+              <path d="M18 16H6l2-2V9a4 4 0 0 1 8 0v5zM10 19h4" />
+            </svg></button><button class="icon-button" aria-label="Messages"><svg viewBox="0 0 24 24">
+              <path d="M4 5h16v11H9l-5 4z" />
+            </svg></button><a class="profile-mini" href="profile.html?v=20261124-5"><img
+              src="assets/images/figma/mini-avatar.png" alt="">
+            <div><strong>Margaret Mead</strong><span>User</span></div>
+          </a></div>
+      </header>
+      <div class="content settings-content">
+        <section class="settings-section profile-settings" id="profile-settings">
+          <div class="settings-tabs">
+            <h2>Profile settings</h2>
+            <div class="settings-tab-list"><button class="settings-tab active"
+                data-target="profile-settings">Profile</button><button class="settings-tab"
+                data-target="payment-settings">Payment info</button><button class="settings-tab"
+                data-target="accounts-settings">Connected account</button></div>
+          </div>
+          <div class="settings-body">
+            <form id="profileForm" class="settings-form">
+              <div class="settings-grid">
+                <div class="form-field"><label>First name</label><input value="Margaret" placeholder="Enter first name">
+                </div>
+                <div class="form-field"><label>Last name</label><input value="Mead" placeholder="Enter last name"></div>
+                <div class="form-field"><label>Email</label><input type="email" value="" placeholder="Enter email">
+                </div>
+                <div class="form-field"><label>Phone number</label><input value="" placeholder="Enter phone number">
+                </div>
+                <div class="form-field"><label>Gender</label><select>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select></div>
+                <div class="form-field"><label>Date of birth</label><input type="text" value="" placeholder="DD/MM/YY">
+                </div>
+                <div class="form-field"><label>State</label><select>
+                    <option>Alaska</option>
+                    <option>California</option>
+                    <option>New York</option>
+                  </select></div>
+                <div class="form-field"><label>City</label><select>
+                    <option>City name</option>
+                  </select></div>
+                <div class="form-field"><label>Zip code</label><input value="" placeholder="12345"></div>
+              </div>
+              <button class="primary-btn settings-update" type="submit">Update information</button>
+            </form>
+            <aside class="password-panel">
+              <div class="settings-avatar"><img src="assets/images/avatar.jpg" alt=""><button type="button"
+                  aria-label="Change image">Change img</button></div>
+              <form class="password-form">
+                <div class="form-field"><label>Change password</label><input type="password" value="password"
+                    placeholder="Password"></div>
+                <div class="form-field"><input type="password" value="password" placeholder="Confirm password"></div>
+              </form>
+            </aside>
+          </div>
+        </section>
+        <section class="settings-section payment-settings" id="payment-settings">
+          <div class="settings-tabs">
+            <h2>Payment</h2>
+            <div class="settings-tab-list"><button class="settings-tab"
+                data-target="profile-settings">Profile</button><button class="settings-tab active"
+                data-target="payment-settings">Payment info</button><button class="settings-tab"
+                data-target="accounts-settings">Connected account</button></div>
+          </div>
+          <div class="payment-body">
+            <form class="billing-form">
+              <h3>Billing address</h3>
+              <div class="billing-grid">
+                <div class="form-field"><label>Address</label><input placeholder="Enter address"></div>
+                <div class="form-field"><label>City</label><input placeholder="City"></div>
+                <div class="form-field"><label>State/province</label><input placeholder="Enter state/province"></div>
+                <div class="form-field"><label>Zip code</label><input placeholder="Enter zip code"></div>
+              </div><button class="primary-btn settings-update" type="button">Update information</button>
+            </form>
+            <aside class="payment-methods">
+              <h3>Payment methods</h3>
+              <div class="payment-method"><span class="card-icon">▰</span>
+                <div><strong>Express pay</strong><span>VISA ending in 4242</span></div><button
+                  type="button">Default</button>
+              </div>
+              <div class="payment-method bank"><span class="card-icon">▰</span>
+                <div><strong>User name</strong><span>Bank account 65rf4f</span></div>
+              </div><button class="primary-btn add-payment" type="button">Add payment method</button>
+            </aside>
+          </div>
+        </section>
+        <section class="settings-section accounts-settings" id="accounts-settings">
+          <div class="settings-tabs">
+            <h2>Accounts</h2>
+            <div class="settings-tab-list"><button class="settings-tab"
+                data-target="profile-settings">Profile</button><button class="settings-tab"
+                data-target="payment-settings">Payment info</button><button class="settings-tab active"
+                data-target="accounts-settings">Connected account</button></div>
+          </div>
+          <h3 class="connected-title">Connected accounts</h3>
+          <div class="account-row"><span class="account-logo google">G</span>
+            <div><strong>Google</strong><span>Info@coaccount7-revol.com</span></div><button
+              type="button">Disconnect</button>
+          </div>
+          <div class="account-row"><span class="account-logo facebook">F</span>
+            <div><strong>Facebook</strong><span>Not connected</span></div><button type="button">Connect</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="assets/js/main.js?v=20261124-6"></script>
+</body>
+
+</html>
